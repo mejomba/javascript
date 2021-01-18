@@ -128,22 +128,24 @@
 // const result2 = number3 + number4;
 // console.log(result2);
 
-const randomNumber = 5;
-document.querySelector('.form').addEventListener('submit', function (e) {
- e.preventDefault();
- let value = document.getElementById('amount').value;
- // console.log(typeof(value));
- value = parseInt(value);
- console.log('input value: ', value);
- console.log('sum of value: ', randomNumber + value);
-});
+// const randomNumber = 5;
+// document.querySelector('.form').addEventListener('submit', function (e) {
+//  e.preventDefault();
+//  let value = document.getElementById('amount').value;
+//  // console.log(typeof(value));
+//  value = parseInt(value);
+//  console.log('input value: ', value);
+//  console.log('sum of value: ', randomNumber + value);
+// });
 
 
+// function
+function hello(name, lastName){
+ console.log('hello ' + name + lastName);
+}
 
-
-
-
-
+hello('mojtaba', ' aminzadeh')
+hello('mohamad', ' ahmadi')
 
 
 
@@ -157,5 +159,5 @@ document.querySelector('.form').addEventListener('submit', function (e) {
 
 // // while loop
 
-// // function
+// 
 
