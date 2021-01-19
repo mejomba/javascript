@@ -140,12 +140,49 @@
 
 
 // function
-function hello(name, lastName){
- console.log('hello ' + name + lastName);
+// function hello(name, lastName){
+//  let hello = 'hello ' + name + lastName
+//  return hello
+// }
+
+
+// const hello = function (name, lastName){
+//  let hello = 'hello ' + name + lastName
+//  return hello
+// }
+
+// const add = (num1, num2)=> num1 + num2;
+
+// let name = 10
+// hello(name, ' aminzadeh')
+// hello('mohamad', ' ahmadi')
+
+// let xxx = add(5, 4)
+// console.log(xxx);
+
+
+
+// object
+
+const person = {
+ name: 'mojtaba',
+ lastName: 'aminzadeh',
+ age: 27,
+ friends: ['mohamad', 'sina'],
+ sayHello: function (){
+  console.log('hello');
+ }
 }
 
-hello('mojtaba', ' aminzadeh')
-hello('mohamad', ' ahmadi')
+console.log(person.name);
+console.log(person.friends[1]);
+person.sayHello();
+
+
+
+
+
+
 
 
 
