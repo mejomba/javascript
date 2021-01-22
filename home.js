@@ -188,17 +188,15 @@
 // == checks only value
 // === checks value and type
 // logical operator
-// || &&
+// || && !
 
 
-const name = 'mojtaba'
-const age = 27
-gender = 'male'
-if ((name === 'mojtaba' || age == 25) || gender === 'male') {
- console.log('xxxxxx');
-}
-
-
+// const name = 'mojtaba'
+// const age = 27
+// gender = 'male'
+// if (!(name === 'mojtaba' || age == 25) || gender !== 'male') {
+//  console.log('xxxxxx');
+// }
 
 
 // if (num1 > num2) {
@@ -212,6 +210,42 @@ if ((name === 'mojtaba' || age == 25) || gender === 'male') {
 
 
 
+// switch
+// dice value: 1 - 6
+
+// var dice = 0;
+
+// switch (dice) {
+//  case 1:
+//   console.log('you got one');
+//   break
+
+//  case 2:
+//   console.log('you got tow');
+//   break
+
+//  case 3:
+//   console.log('you got three');
+//   break
+  
+//  default:
+//   console.log('out of range');
+// }
+
+
+
+
+
+
+// if (dice == 1) {
+//  console.log('you got one');
+// }
+// else if (dice == 2) {
+//  console.log('you got two');
+// }
+// else {
+//  console.log('out of range');
+// }
 
 
 
@@ -221,9 +255,13 @@ if ((name === 'mojtaba' || age == 25) || gender === 'male') {
 
 
 
-// // for loop
+
+
+
 
 // // while loop
 
-// 
+// // do while
+
+// // for loop
 
