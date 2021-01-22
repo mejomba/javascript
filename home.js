@@ -164,19 +164,51 @@
 
 // object
 
-const person = {
- name: 'mojtaba',
- lastName: 'aminzadeh',
- age: 27,
- friends: ['mohamad', 'sina'],
- sayHello: function (){
-  console.log('hello');
- }
+// const person = {
+//  name: 'mojtaba',
+//  lastName: 'aminzadeh',
+//  age: 27,
+//  friends: ['mohamad', 'sina'],
+//  sayHello: function (){
+//   console.log('hello');
+//  }
+// }
+
+// console.log(person.name);
+// console.log(person.friends[1]);
+// person.sayHello();
+
+
+
+
+// conditional statements
+// // if else
+// comparison operators
+// >, <, >=, <=, ==, ===, !=, !==
+// == checks only value
+// === checks value and type
+// logical operator
+// || &&
+
+
+const name = 'mojtaba'
+const age = 27
+gender = 'male'
+if ((name === 'mojtaba' || age == 25) || gender === 'male') {
+ console.log('xxxxxx');
 }
 
-console.log(person.name);
-console.log(person.friends[1]);
-person.sayHello();
+
+
+
+// if (num1 > num2) {
+//  console.log('hello');
+// } else if (num1 == num2) {
+//  console.log('num1 == num2');
+// }
+//  else {
+//  console.log('num2 > num1');
+// }
 
 
 
@@ -188,9 +220,6 @@ person.sayHello();
 
 
 
-
-
-// // if else
 
 // // for loop
 
