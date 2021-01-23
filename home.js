@@ -249,19 +249,26 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 // // while loop
+// var mony = 10;
+// while (mony > 0) {
+//   console.log('you have ' + mony);
+//   mony--
+// }
+
+
 
 // // do while
+// var mony = -10;
+// do {
+//   console.log('you have ' + mony);
+//   mony--
+// }
+// while(mony > 0)
 
-// // for loop
+// for loop
+
+for (var i = 10 ; i > 0 ; i-=0.5) {
+  console.log(i);
+}
 
