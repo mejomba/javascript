@@ -268,7 +268,7 @@
 
 // for loop
 
-for (var i = 10 ; i > 0 ; i-=0.5) {
-  console.log(i);
-}
+// for (var i = 10 ; i > 0 ; i-=0.5) {
+//   console.log(i);
+// }
 
