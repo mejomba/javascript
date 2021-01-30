@@ -54,40 +54,53 @@
 
 // ================================== 3
 // Array Properties and Methods
-let names = ['john', 'bobo', 'barry', 'ben'];
+// let names = ['john', 'bobo', 'barry', 'ben'];
 
-// lenght
-console.log(names.length);
-console.log(names[names.length - 1]);
+// // lenght
+// console.log(names.length);
+// console.log(names[names.length - 1]);
 
-// concat
-const lastNames = ['pepper', 'onion', 'banana'];
-const allNames = names.concat(lastNames);
-console.log(allNames);
+// // concat
+// const lastNames = ['pepper', 'onion', 'banana'];
+// const allNames = names.concat(lastNames);
+// console.log(allNames);
 
-// reverse
-console.log(allNames.reverse());
+// // reverse
+// console.log(allNames.reverse());
 
-// unshift
-allNames.unshift('susy');
-allNames.unshift('anna');
-console.log(allNames);
-// shift
-allNames.shift();
-allNames.shift();
-console.log(allNames);
+// // unshift
+// allNames.unshift('susy');
+// allNames.unshift('anna');
+// console.log(allNames);
+// // shift
+// allNames.shift();
+// allNames.shift();
+// console.log(allNames);
 
-// push
-allNames.push('susy');
-console.log(allNames);
+// // push
+// allNames.push('susy');
+// console.log(allNames);
 
-// pop
-allNames.pop();
-allNames.pop();
-allNames.pop();
-console.log(allNames);
+// // pop
+// allNames.pop();
+// allNames.pop();
+// allNames.pop();
+// console.log(allNames);
 
-// splice - mutates original array
-const newArray = allNames.splice(2, 1);
+// // splice - mutates original array
+// const newArray = allNames.splice(2, 1);
+// console.log(newArray);
+// console.log(allNames);
+
+// Arrays and for loop
+
+const names = ['anna', 'susy', 'bob'];
+const lastNames = 'blob';
+let newArray = [];
+
+for (let i = 0; i < names.length; i++) {
+ let fullName = `${names[i]} ${lastNames}`
+ newArray.push(fullName)
+}
+console.log(names);
 console.log(newArray);
-console.log(allNames);
