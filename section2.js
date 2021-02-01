@@ -160,3 +160,22 @@
 // dose return a new array
 // dose not change size of original array
 
+const people = [
+ {name: 'bob', age: 20, position: 'developer'},
+ {name: 'peter', age: 25, position: 'designer'},
+ {name: 'susy', age: 30, position: 'boos'},
+]
+
+const ages = people.map(function (person) {
+ console.log(person.age);
+ age = person.age + 5
+ return age
+});
+
+console.log(ages);
+
+const names = people.map(person => {
+ return `<h1>${person.name}</h1>`
+})
+console.log(names);
+document.body.innerHTML = names.join('');
