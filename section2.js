@@ -110,19 +110,53 @@
 // Callback Functions
 // passed to a another function as an argument
 
-function morning(name) {
- return `Good Morning ${name}`
-}
+// function morning(name) {
+//  return `Good Morning ${name}`
+// }
 
-function afternoon(name) {
- return `Good afternoon ${name}`
-}
+// function afternoon(name) {
+//  return `Good afternoon ${name}`
+// }
 
-function greeting(name, cb) {
- const myName = name;
- console.log(`${cb('mojtaba')}, my name is ${myName}`);
-}
+// function greeting(name, cb) {
+//  const myName = name;
+//  console.log(`${cb('mojtaba')}, my name is ${myName}`);
+// }
 
-greeting('peter', morning);
-greeting('peter', afternoon)
+// greeting('peter', morning);
+// greeting('peter', afternoon)
+
+
+// ================================== 5
+// Powerfull Array Methods
+// forEach, map, filter, find, reduce
+// Iterate over array - no for loop required
+// Accept Callback function as an argument
+
+// const numbers = [1, 2, 3, 4]
+
+// show all numbers
+// for (let i=0; i < numbers.length; i++) {
+//  console.log(numbers[i]);
+// }
+
+// function iterateArray(any) {
+//  console.log(any);
+// }
+// numbers.forEach(iterateArray)
+
+
+// numbers.forEach(function (any) {
+//  console.log(any);
+// });
+
+// numbers.forEach(any => {
+//  console.log(any);
+// });
+
+
+// ================================== 6
+// map
+// dose return a new array
+// dose not change size of original array
 
