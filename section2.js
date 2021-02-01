@@ -92,15 +92,37 @@
 // console.log(newArray);
 // console.log(allNames);
 
-// Arrays and for loop
+// // Arrays and for loop
 
-const names = ['anna', 'susy', 'bob'];
-const lastNames = 'blob';
-let newArray = [];
+// const names = ['anna', 'susy', 'bob'];
+// const lastNames = 'blob';
+// let newArray = [];
 
-for (let i = 0; i < names.length; i++) {
- let fullName = `${names[i]} ${lastNames}`
- newArray.push(fullName)
+// for (let i = 0; i < names.length; i++) {
+//  let fullName = `${names[i]} ${lastNames}`
+//  newArray.push(fullName)
+// }
+// console.log(names);
+// console.log(newArray);
+
+
+// ================================== 4
+// Callback Functions
+// passed to a another function as an argument
+
+function morning(name) {
+ return `Good Morning ${name}`
 }
-console.log(names);
-console.log(newArray);
+
+function afternoon(name) {
+ return `Good afternoon ${name}`
+}
+
+function greeting(name, cb) {
+ const myName = name;
+ console.log(`${cb('mojtaba')}, my name is ${myName}`);
+}
+
+greeting('peter', morning);
+greeting('peter', afternoon)
+
