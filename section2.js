@@ -213,14 +213,38 @@
 // returns first match, if no match undifiend
 // gread for getting unique value
 
-const people = [
- {name: 'bob', age: 20, position: 'developer', id:1},
- {name: 'peter', age: 25, position: 'designer', id:2},
- {name: 'susy', age: 30, position: 'boos', id:3},
- {name: 'ana', age: 35, position: 'boos', id:4}
-]
+// const people = [
+//  {name: 'bob', age: 20, position: 'developer', id:1},
+//  {name: 'peter', age: 25, position: 'designer', id:2},
+//  {name: 'susy', age: 30, position: 'boos', id:3},
+//  {name: 'ana', age: 35, position: 'boos', id:4}
+// ]
 
-const person = people.find(function(person){
- return person.id === 10
-})
-console.log(person);
+// const person = people.find(function(person){
+//  return person.id === 10
+// })
+// console.log(person);
+
+
+
+// ================================== 9
+// reduce
+// iterate, callback function
+// reduces to a single value - number, arary, object
+// 1 parameter ('acc') - total of all calculations
+// 2 parameter ('curr') - current iteration/value
+
+// const people = [
+//  {name: 'bob', age: 20, position: 'developer', id:1, salary: 200},
+//  {name: 'peter', age: 25, position: 'designer', id:2, salary: 300},
+//  {name: 'susy', age: 30, position: 'boos', id:3, salary: 500},
+//  {name: 'ana', age: 35, position: 'boos', id:4, salary: 600}
+// ]
+
+// const total = people.reduce(function(acc, curr) {
+//  if (curr.position === 'boos') {
+//   acc += curr.salary
+//  }
+//  return acc
+// }, 0)
+// console.log(total);
