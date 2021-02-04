@@ -160,22 +160,67 @@
 // dose return a new array
 // dose not change size of original array
 
+// const people = [
+//  {name: 'bob', age: 20, position: 'developer'},
+//  {name: 'peter', age: 25, position: 'designer'},
+//  {name: 'susy', age: 30, position: 'boos'},
+// ]
+
+// const ages = people.map(function (person) {
+//  console.log(person.age);
+//  age = person.age + 5
+//  return age
+// });
+
+// console.log(ages);
+
+// const names = people.map(person => {
+//  return `<h1>${person.name}</h1>`
+// })
+// console.log(names);
+// document.body.innerHTML = names.join('');
+
+
+// ================================== 7
+// filter
+// dose return a new array
+// can manipulae the size of new array
+// return based on candition
+
+// const people = [
+//  {name: 'bob', age: 20, position: 'developer'},
+//  {name: 'peter', age: 25, position: 'designer'},
+//  {name: 'susy', age: 30, position: 'boos'},
+//  {name: 'ana', age: 35, position: 'boos'}
+// ]
+
+// const youngPeople = people.filter(function(person) {
+//  return person.age < 30;
+// });
+// console.log(youngPeople);
+
+// const developer = people.filter(person => {
+//  return person.position === 'developer'
+// })
+// console.log(developer);
+
+
+
+
+// ================================== 8
+// find
+// returns single instance
+// returns first match, if no match undifiend
+// gread for getting unique value
+
 const people = [
- {name: 'bob', age: 20, position: 'developer'},
- {name: 'peter', age: 25, position: 'designer'},
- {name: 'susy', age: 30, position: 'boos'},
+ {name: 'bob', age: 20, position: 'developer', id:1},
+ {name: 'peter', age: 25, position: 'designer', id:2},
+ {name: 'susy', age: 30, position: 'boos', id:3},
+ {name: 'ana', age: 35, position: 'boos', id:4}
 ]
 
-const ages = people.map(function (person) {
- console.log(person.age);
- age = person.age + 5
- return age
-});
-
-console.log(ages);
-
-const names = people.map(person => {
- return `<h1>${person.name}</h1>`
+const person = people.find(function(person){
+ return person.id === 10
 })
-console.log(names);
-document.body.innerHTML = names.join('');
+console.log(person);
