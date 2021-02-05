@@ -248,3 +248,47 @@
 //  return acc
 // }, 0)
 // console.log(total);
+
+
+// ================================== 10
+// Math
+// Standard built-in objects - always available
+// const number = 4.212;
+// const result = Math.floor(number)
+// const result = Math.ceil(number)
+// const result = Math.sqrt(number)
+// const result = Math.PI
+// const result = Math.floor(Math.random() * 10 + 1)
+// console.log(result);
+
+
+// ================================== 11
+// Date
+
+// const months = [
+//  'Junuary',
+//  'February',
+//  'March',
+//  'April',
+//  'May',
+//  'June',
+//  'July',
+//  'August',
+//  'September',
+//  'October',
+//  'November',
+//  'Decenber',
+// ];
+// const days = [
+//  'Sunday',
+//  'Monday',
+//  'Tuesday',
+//  'Wednesday',
+//  'Thursday',
+//  'Friday',
+//  'Saturtday',
+// ];
+
+// const date = new Date().toLocaleDateString('Fa-IR');
+// console.log(date);
+
