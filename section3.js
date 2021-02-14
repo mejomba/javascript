@@ -30,31 +30,54 @@
 
 
 
-// ============================== 2
-// getElementById('id');
-// get single item
-const head = document.getElementById('heading');
-head.style.color = 'green';
+// // ============================== 2
+// // getElementById('id');
+// // get single item
+// const head = document.getElementById('heading');
+// head.style.color = 'green';
 
-const button = document.getElementById('btn');
-button.style.color = 'red';
-button.style.backgroundColor = 'green';
+// const button = document.getElementById('btn');
+// button.style.color = 'red';
+// button.style.backgroundColor = 'green';
 
 
-// ============================== 3
-// getElementsByTagName('tagname');
-// node-list = array-like object
+// // ============================== 3
+// // getElementsByTagName('tagname');
+// // node-list = array-like object
+// // index, length property but not array methods
+// const heading = document.getElementsByTagName('h2');
+// // heading[0].style.color = 'tomato';
+// const myArray = [...heading]
+// myArray.forEach(function(item) {
+//  item.style.color = 'tomato'
+// });
+// // console.log(heading);
+// // console.log(myArray);
+
+// const listItem = document.getElementsByTagName('li');
+// for (let i=0; i<listItem.length; i++) {
+//  listItem[i].style.color = 'green';
+// }
+
+
+// ============================== 4
+// getElementsByClassName('classname');
+// array-like object
 // index, length property but not array methods
-const heading = document.getElementsByTagName('h2');
-// heading[0].style.color = 'tomato';
-const myArray = [...heading]
-myArray.forEach(function(item) {
- item.style.color = 'tomato'
-});
-// console.log(heading);
-// console.log(myArray);
+// const listItems = document.getElementsByClassName('special');
+// listItems[0].style.backgroundColor = 'blue'
 
-const listItem = document.getElementsByTagName('li');
-for (let i=0; i<listItem.length; i++) {
- listItem[i].style.color = 'green';
-}
+
+// ============================== 5
+// querySelector('any css); - select single
+// querySelectorAll('any css); - select all
+const result = document.querySelector('#result');
+result.style.backgroundColor = 'green'
+
+const listItems = document.querySelectorAll('.special');
+// console.log(listItems);
+listItems.forEach(function(item) {
+ item.style.color = 'red';
+})
+const lastItem = document.querySelector('li:last-child');
+console.log(lastItem);
