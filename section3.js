@@ -95,5 +95,23 @@
 // console.log(result.lastChild);
 
 // parentElement
-const heading = document.querySelector('h2');
-heading.parentElement.style.color = 'red'
+// const heading = document.querySelector('h2');
+// heading.parentElement.style.color = 'red'
+
+
+// ============================== 7
+// previousSibling
+// nextSibling
+// return whitespace
+// const first = document.querySelector('.first');
+// console.log(first.nextSibling.nextSibling);
+
+// const last = document.querySelector('.last');
+// last.previousSibling.previousSibling.style.color = 'red'
+
+
+// previousElementSibling
+// nextElementSibling
+const first = document.querySelector('.first');
+console.log(first.nextElementSibling);
+console.log(first.previousElementSibling);
