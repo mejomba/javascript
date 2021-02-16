@@ -71,13 +71,29 @@
 // ============================== 5
 // querySelector('any css); - select single
 // querySelectorAll('any css); - select all
-const result = document.querySelector('#result');
-result.style.backgroundColor = 'green'
+// const result = document.querySelector('#result');
+// result.style.backgroundColor = 'green'
 
-const listItems = document.querySelectorAll('.special');
-// console.log(listItems);
-listItems.forEach(function(item) {
- item.style.color = 'red';
-})
-const lastItem = document.querySelector('li:last-child');
-console.log(lastItem);
+// const listItems = document.querySelectorAll('.special');
+// // console.log(listItems);
+// listItems.forEach(function(item) {
+//  item.style.color = 'red';
+// })
+// const lastItem = document.querySelector('li:last-child');
+// console.log(lastItem);
+
+// ============================== 6
+// childNodes - returns all childNodes including whitespace
+
+// children
+// firstChild
+// lastChild
+// const result = document.querySelector('#result');
+// console.log(result.childNodes);
+// console.log(result.children);
+// console.log(result.firstChild);
+// console.log(result.lastChild);
+
+// parentElement
+const heading = document.querySelector('h2');
+heading.parentElement.style.color = 'red'
