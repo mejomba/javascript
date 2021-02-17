@@ -128,14 +128,34 @@
 // ============================== 8
 // getAttribute();
 // setAttribute();
-const first = document.querySelector('.first');
-const idValue = first.getAttribute('id');
-console.log(idValue);
-console.log(first);
+// const first = document.querySelector('.first');
+// const idValue = first.getAttribute('id');
+// console.log(idValue);
+// console.log(first);
 
-const link = document.getElementById('link');
-console.log(link.getAttribute('href'));
+// const link = document.getElementById('link');
+// console.log(link.getAttribute('href'));
 
-const last = link.nextElementSibling;
-console.log(last);
-last.setAttribute('class', 'first second');
+// const last = link.nextElementSibling;
+// console.log(last);
+// last.setAttribute('class', 'first second');
+
+// className
+// classList
+const first = document.getElementById('first');
+const second = document.getElementById('second');
+const third = document.getElementById('third');
+console.log(first.className);
+first.className = 'text colors';
+// first.className = 'colors';
+// second.className = 'text colors'
+second.classList.add( 'colors');
+second.classList.remove('colors')
+
+console.log(second.classList.contains('text'));
+if (second.classList.contains('text')) {
+ second.classList.add('colors')
+} else {
+ second.classList.add('text')
+}
+console.log(second.classList);
