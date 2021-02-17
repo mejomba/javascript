@@ -118,8 +118,24 @@
 
 // nodeValue
 // textContent
-const item = document.getElementById('special');
-const value = item.firstChild.nodeValue;
-console.log(value);
-console.log(item.firstChild.nodeValue);
-console.log(item.textContent);
+// const item = document.getElementById('special');
+// const value = item.firstChild.nodeValue;
+// console.log(value);
+// console.log(item.firstChild.nodeValue);
+// console.log(item.textContent);
+
+
+// ============================== 8
+// getAttribute();
+// setAttribute();
+const first = document.querySelector('.first');
+const idValue = first.getAttribute('id');
+console.log(idValue);
+console.log(first);
+
+const link = document.getElementById('link');
+console.log(link.getAttribute('href'));
+
+const last = link.nextElementSibling;
+console.log(last);
+last.setAttribute('class', 'first second');
