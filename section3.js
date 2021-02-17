@@ -112,6 +112,14 @@
 
 // previousElementSibling
 // nextElementSibling
-const first = document.querySelector('.first');
-console.log(first.nextElementSibling);
-console.log(first.previousElementSibling);
+// const first = document.querySelector('.first');
+// console.log(first.nextElementSibling);
+// console.log(first.previousElementSibling);
+
+// nodeValue
+// textContent
+const item = document.getElementById('special');
+const value = item.firstChild.nodeValue;
+console.log(value);
+console.log(item.firstChild.nodeValue);
+console.log(item.textContent);
