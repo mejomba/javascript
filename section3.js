@@ -142,20 +142,43 @@
 
 // className
 // classList
-const first = document.getElementById('first');
-const second = document.getElementById('second');
-const third = document.getElementById('third');
-console.log(first.className);
-first.className = 'text colors';
-// first.className = 'colors';
-// second.className = 'text colors'
-second.classList.add( 'colors');
-second.classList.remove('colors')
+// const first = document.getElementById('first');
+// const second = document.getElementById('second');
+// const third = document.getElementById('third');
+// console.log(first.className);
+// first.className = 'text colors';
+// // first.className = 'colors';
+// // second.className = 'text colors'
+// second.classList.add( 'colors');
+// second.classList.remove('colors')
 
-console.log(second.classList.contains('text'));
-if (second.classList.contains('text')) {
- second.classList.add('colors')
-} else {
- second.classList.add('text')
-}
-console.log(second.classList);
+// console.log(second.classList.contains('text'));
+// if (second.classList.contains('text')) {
+//  second.classList.add('colors')
+// } else {
+//  second.classList.add('text')
+// }
+// console.log(second.classList);
+
+
+// ============================== 9
+// createElement('element')
+// createTextNode('text content')
+// element.appendChild(childElement)
+
+const result = document.getElementById('result');
+
+const bodyDiv = document.createElement('div');
+const text = document.createTextNode('a simple body text');
+bodyDiv.appendChild(text);
+document.body.insertBefore(bodyDiv, result)
+
+const first = document.querySelector('.red');
+const heading = document.createElement('h2');
+const headingText = document.createTextNode('heading text');
+heading.appendChild(headingText);
+heading.classList.add('blue');
+result.insertBefore(heading, first);
+
+
+// insertBefore('element', 'location')
