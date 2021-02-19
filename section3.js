@@ -196,19 +196,31 @@
 // ============================== 11
 // innerHTML
 // textContent
-const list = document.querySelector('#first');
-const item = document.querySelector('.item');
-const div = document.querySelector('#second');
-console.log(div.textContent);
-console.log(list.innerHTML);
-console.log(list.textContent);
+// const list = document.querySelector('#first');
+// const item = document.querySelector('.item');
+// const div = document.querySelector('#second');
+// console.log(div.textContent);
+// console.log(list.innerHTML);
+// console.log(list.textContent);
 
-const ul = document.createElement('ul');
-ul.innerHTML = `<li class="item">list item</li>
-      <li>list item</li><li>list item</li>`;
-document.body.appendChild(ul)
+// const ul = document.createElement('ul');
+// ul.innerHTML = `<li class="item">list item</li>
+//       <li>list item</li><li>list item</li>`;
+// document.body.appendChild(ul)
 
-const someVar = 'random value'
-div.textContent = 'hello world'
-div.innerHTML = `<li class="item">${someVar}</li>
-      <li>list item</li><li>list item</li>`
+// const someVar = 'random value'
+// div.textContent = 'hello world'
+// div.innerHTML = `<li class="item">${someVar}</li>
+//       <li>list item</li><li>list item</li>`
+
+
+// ============================== 12
+// select element
+// addEventListener()
+// what event, what to do
+const btn = document.querySelector('.btn');
+const heading = document.querySelector('h2');
+
+btn.addEventListener('click', function() {
+ heading.classList.add('red');
+})

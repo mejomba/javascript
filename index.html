@@ -5,33 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript</title>
     <style>
-      li {
-        font-size: 1.3rem;
-      }
-      .red {
-        background: red;
-        color: white;
-      }
-      .blue {
+      .title {
         background: blue;
         color: white;
+        font-size: 2rem;
+        text-transform: capitalize;
       }
+      .red {
+        color: red;
+        font-size: 2rem;
+      }
+      .btn {
+        color: red;
+      }
+
     </style>
   </head>
   <body>
 
-    <!-- <h1>first heading</h1>
-    <div id="result">
-      <h1>second heading</h1>
-    </div> -->
-    
-    <ul id="first">
-      <li class="item">list item</li>
-      <li>list item</li>
-    </ul>
-    <div id="second">
-      some text content
-    </div>
+    <h2>event in javascript</h2>
+    <button class="btn">click me</button>
+    <p onclick="this.classList.add('red')">some text</p>
 
     <script src="section1.js"></script>
     <script src="section2.js"></script>
