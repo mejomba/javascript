@@ -165,20 +165,50 @@
 // createElement('element')
 // createTextNode('text content')
 // element.appendChild(childElement)
-
-const result = document.getElementById('result');
-
-const bodyDiv = document.createElement('div');
-const text = document.createTextNode('a simple body text');
-bodyDiv.appendChild(text);
-document.body.insertBefore(bodyDiv, result)
-
-const first = document.querySelector('.red');
-const heading = document.createElement('h2');
-const headingText = document.createTextNode('heading text');
-heading.appendChild(headingText);
-heading.classList.add('blue');
-result.insertBefore(heading, first);
-
-
 // insertBefore('element', 'location')
+// replaceChild(old, new);
+
+// const result = document.getElementById('result');
+
+// const bodyDiv = document.createElement('div');
+// const text = document.createTextNode('a simple body text');
+// bodyDiv.appendChild(text);
+// document.body.insertBefore(bodyDiv, result)
+
+// const first = document.querySelector('.red');
+// const heading = document.createElement('h2');
+// const headingText = document.createTextNode('heading text');
+// heading.appendChild(headingText);
+// heading.classList.add('blue');
+// result.insertBefore(heading, first);
+
+
+// ============================== 10
+// remove
+// removeChild
+// const result = document.querySelector('#result');
+// // result.remove();
+// const heading = result.querySelector('h1');
+// console.log(heading);
+// result.removeChild(heading);
+
+
+// ============================== 11
+// innerHTML
+// textContent
+const list = document.querySelector('#first');
+const item = document.querySelector('.item');
+const div = document.querySelector('#second');
+console.log(div.textContent);
+console.log(list.innerHTML);
+console.log(list.textContent);
+
+const ul = document.createElement('ul');
+ul.innerHTML = `<li class="item">list item</li>
+      <li>list item</li><li>list item</li>`;
+document.body.appendChild(ul)
+
+const someVar = 'random value'
+div.textContent = 'hello world'
+div.innerHTML = `<li class="item">${someVar}</li>
+      <li>list item</li><li>list item</li>`
