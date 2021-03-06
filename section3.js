@@ -238,22 +238,85 @@
 // mouseup - button is released
 // mouseenter - moved onto an element
 // mouseleave - moved out of an element
+// const btn = document.querySelector('.btn');
+// const heading = document.querySelector('h2');
+
+// btn.addEventListener('click', function() {
+//  console.log('you click me');
+// })
+// btn.addEventListener('mousedown', function() {
+//  console.log('down');
+// })
+// btn.addEventListener('mouseup', function() {
+//  console.log('up');
+// })
+
+// heading.addEventListener('mouseenter', function() {
+//  heading.classList.add('red');
+// })
+// heading.addEventListener('mouseleave', function() {
+//  heading.classList.remove('red');
+// })
+
+
+
+
+
+
+// ============================== 14
+// keypress - when key is pressed
+// keydown - when key is down
+// keyup - when key is released
+// const input = document.getElementById('name');
+// const  p = document.querySelector('p');
+
+// input.addEventListener('keypress', function () {
+//  console.log('keypress');
+// })
+// input.addEventListener('keydown', function () {
+//  console.log('keydown');
+// })
+// input.addEventListener('keyup', function () {
+ // console.log(input.value);
+ // p.textContent = input.value
+// })
+
+
+
+
+
+
+// ============================== 15
+// event object argument e, evt
+// info about triggered event
+// event.type
+// event.currentTarget
+// this keyword
+// preventDefault() - prevents default behaviour
 const btn = document.querySelector('.btn');
-const heading = document.querySelector('h2');
+const heading = document.querySelector('h1');
+const link = document.getElementById('link');
 
-btn.addEventListener('click', function() {
- console.log('you click me');
-})
-btn.addEventListener('mousedown', function() {
- console.log('down');
-})
-btn.addEventListener('mouseup', function() {
- console.log('up');
+heading.addEventListener('click', (e) => {
+ // this.classList.add('red');
+ console.log(e);
+ console.log(this);
 })
 
-heading.addEventListener('mouseenter', function() {
- heading.classList.add('red');
+btn.addEventListener('click', function (e) {
+ e.currentTarget.classList.add('red');
+ console.log(e.type);
 })
-heading.addEventListener('mouseleave', function() {
- heading.classList.remove('red');
+
+link.addEventListener('click', function (xxx) {
+ xxx.preventDefault();
 })
+
+
+
+
+
+
+// ============================== 16
+// currentTarget - always refers to the element to which the event handler has been attached to
+// target - idendifies the element on which the event occured
