@@ -293,24 +293,24 @@
 // event.currentTarget
 // this keyword
 // preventDefault() - prevents default behaviour
-const btn = document.querySelector('.btn');
-const heading = document.querySelector('h1');
-const link = document.getElementById('link');
+// const btn = document.querySelector('.btn');
+// const heading = document.querySelector('h1');
+// const link = document.getElementById('link');
 
-heading.addEventListener('click', (e) => {
- // this.classList.add('red');
- console.log(e);
- console.log(this);
-})
+// heading.addEventListener('click', (e) => {
+//  // this.classList.add('red');
+//  console.log(e);
+//  console.log(this);
+// })
 
-btn.addEventListener('click', function (e) {
- e.currentTarget.classList.add('red');
- console.log(e.type);
-})
+// btn.addEventListener('click', function (e) {
+//  e.currentTarget.classList.add('red');
+//  console.log(e.type);
+// })
 
-link.addEventListener('click', function (xxx) {
- xxx.preventDefault();
-})
+// link.addEventListener('click', function (xxx) {
+//  xxx.preventDefault();
+// })
 
 
 
@@ -320,3 +320,13 @@ link.addEventListener('click', function (xxx) {
 // ============================== 16
 // currentTarget - always refers to the element to which the event handler has been attached to
 // target - idendifies the element on which the event occured
+const btns = document.querySelectorAll('.btn');
+
+btns.forEach(function(btn) {
+ btn.addEventListener('click', function(e) {
+  // console.log(e.currentTarget);
+  // e.currentTarget.style.color = 'green';
+  console.log(e.target);
+  e.target.style.color = 'green';
+ })
+})
