@@ -314,19 +314,32 @@
 
 
 
-
-
-
 // ============================== 16
 // currentTarget - always refers to the element to which the event handler has been attached to
 // target - idendifies the element on which the event occured
-const btns = document.querySelectorAll('.btn');
+// const btns = document.querySelectorAll('.btn');
 
-btns.forEach(function(btn) {
- btn.addEventListener('click', function(e) {
-  // console.log(e.currentTarget);
-  // e.currentTarget.style.color = 'green';
-  console.log(e.target);
-  e.target.style.color = 'green';
- })
-})
+// btns.forEach(function(btn) {
+//  btn.addEventListener('click', function(e) {
+//   // console.log(e.currentTarget);
+//   // e.currentTarget.style.color = 'green';
+//   console.log(e.target);
+//   e.target.style.color = 'green';
+//  })
+// })
+
+
+// ============================== 17
+// submit event listener
+// prevent default
+// how to get a value
+// const form = document.getElementById('form');
+// const name = document.getElementById('name');
+// const password = document.getElementById('password');
+
+// form.addEventListener('submit', function(e) {
+//  e.preventDefault();
+//  console.log('form submitted');
+//  console.log(name.value);
+//  console.log(password.value);
+// })
