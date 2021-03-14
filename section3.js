@@ -343,3 +343,24 @@
 //  console.log(name.value);
 //  console.log(password.value);
 // })
+
+
+// ============================== 18
+// web storage API - provided by browser
+// session storage, local storage
+// setItem, getItem, removeItem, clear
+// JSON.stringify(), JSON.parse()
+
+// localStorage.setItem('name', 'mojtaba');
+// // sessionStorage.setItem('name', 'mojtaba');
+// localStorage.setItem('name', 'mohammad');
+// localStorage.setItem('job', 'web developer');
+// const job = localStorage.getItem('job');
+// console.log(job);
+// localStorage.removeItem('name')
+// localStorage.clear()
+const myArray = ['mojtaba', 'mohammad', 'sina'];
+
+localStorage.setItem('name', JSON.stringify(myArray));
+const value = JSON.parse(localStorage.getItem('name'));
+console.log(value);
